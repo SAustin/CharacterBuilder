@@ -7,16 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EBDetailViewController.h"
 
 @class EBDetailViewController;
 
 #import <CoreData/CoreData.h>
 
-@interface EBMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface EBMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, EBDetailViewControllerDelegate>
 
 @property (strong, nonatomic) EBDetailViewController *detailViewController;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
+- (void)prepDatabase;
 
 @end

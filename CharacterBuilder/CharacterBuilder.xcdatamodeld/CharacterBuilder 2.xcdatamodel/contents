@@ -15,7 +15,7 @@
         <attribute name="size" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="totalXP" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <relationship name="characterClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CharacterClass" inverseName="character" inverseEntity="CharacterClass" syncable="YES"/>
+        <relationship name="characterClass" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CharacterClass" inverseName="character" inverseEntity="CharacterClass" syncable="YES"/>
         <relationship name="characterRace" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CharacterRace" inverseName="character" inverseEntity="CharacterRace" syncable="YES"/>
     </entity>
     <entity name="CharacterClass" representedClassName="CharacterClass" syncable="YES">
@@ -30,12 +30,13 @@
         <attribute name="dungeoneeringSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="enduranceSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="firstLevelSkillCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="firstLevelSkills" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="fortitudeBonus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="healingSurgesPerDay" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="healingSurgModifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="healingSurgModifier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="healSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="historySkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="hitPointModifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hitPointBase" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="hitPointsPerLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="implement" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="insightSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -88,13 +89,12 @@
         <attribute name="strengthMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="thieveryMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="vision" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="weightRange" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="wisdomMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="character" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Character" inverseName="characterRace" inverseEntity="Character" syncable="YES"/>
     </entity>
     <elements>
         <element name="Character" positionX="261" positionY="189" width="128" height="285"/>
-        <element name="CharacterClass" positionX="160" positionY="192" width="128" height="630"/>
-        <element name="CharacterRace" positionX="160" positionY="192" width="128" height="510"/>
+        <element name="CharacterClass" positionX="160" positionY="192" width="128" height="645"/>
+        <element name="CharacterRace" positionX="160" positionY="192" width="128" height="495"/>
     </elements>
 </model>

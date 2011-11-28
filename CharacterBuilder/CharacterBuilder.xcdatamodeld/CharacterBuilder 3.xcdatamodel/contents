@@ -4,18 +4,24 @@
         <attribute name="adventuringCompany" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="alignment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="charisma" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="constitution" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dexterity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="diety" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="epicDestiny" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="intelligence" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="paragonPath" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="size" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strength" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="totalXP" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <relationship name="characterClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CharacterClass" inverseName="character" inverseEntity="CharacterClass" syncable="YES"/>
+        <attribute name="wisdom" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="characterClass" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CharacterClass" inverseName="character" inverseEntity="CharacterClass" syncable="YES"/>
         <relationship name="characterRace" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CharacterRace" inverseName="character" inverseEntity="CharacterRace" syncable="YES"/>
     </entity>
     <entity name="CharacterClass" representedClassName="CharacterClass" syncable="YES">
@@ -94,7 +100,7 @@
     </entity>
     <elements>
         <element name="Character" positionX="261" positionY="189" width="128" height="285"/>
-        <element name="CharacterClass" positionX="160" positionY="192" width="128" height="630"/>
+        <element name="CharacterClass" positionX="160" positionY="192" width="128" height="645"/>
         <element name="CharacterRace" positionX="160" positionY="192" width="128" height="510"/>
     </elements>
 </model>

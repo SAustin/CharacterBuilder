@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		617C125214783EF300B85774 /* CharacterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 617C125114783EF300B85774 /* CharacterClass.m */; };
+		61A00BFA147B48DC004D0BFE /* EBRaceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A00BF9147B48DB004D0BFE /* EBRaceDetailViewController.m */; };
+		61A00BFE147CA154004D0BFE /* EBClassPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A00BFD147CA154004D0BFE /* EBClassPickerViewController.m */; };
+		61A00C01147F455F004D0BFE /* EBAbilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A00C00147F455F004D0BFE /* EBAbilitiesViewController.m */; };
+		61A00C0414802B4B004D0BFE /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A00C0314802B4B004D0BFE /* Character.m */; };
+		61C827D21482039A002049DD /* EBSkillPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C827D11482039A002049DD /* EBSkillPickerViewController.m */; };
+		61C827D614834CED002049DD /* EBFeatsPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C827D514834CEC002049DD /* EBFeatsPickerViewController.m */; };
+		61C827D914835489002049DD /* EBPowersPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C827D814835488002049DD /* EBPowersPickerViewController.m */; };
+		61F61D4414788F8600895031 /* CharacterRace.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F61D4314788F8600895031 /* CharacterRace.m */; };
+		61F61D4914796F3C00895031 /* EBClassDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F61D4814796F3C00895031 /* EBClassDetailViewController.m */; };
 		61FCBBEE14776A37003BFAD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FCBBED14776A37003BFAD8 /* UIKit.framework */; };
 		61FCBBF014776A37003BFAD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FCBBEF14776A37003BFAD8 /* Foundation.framework */; };
 		61FCBBF214776A37003BFAD8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FCBBF114776A37003BFAD8 /* CoreGraphics.framework */; };
@@ -21,22 +31,44 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		617C125014783EF300B85774 /* CharacterClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterClass.h; sourceTree = "<group>"; };
+		617C125114783EF300B85774 /* CharacterClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterClass.m; sourceTree = "<group>"; };
+		61A00BF8147B48DB004D0BFE /* EBRaceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBRaceDetailViewController.h; sourceTree = "<group>"; };
+		61A00BF9147B48DB004D0BFE /* EBRaceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBRaceDetailViewController.m; sourceTree = "<group>"; };
+		61A00BFC147CA154004D0BFE /* EBClassPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBClassPickerViewController.h; sourceTree = "<group>"; };
+		61A00BFD147CA154004D0BFE /* EBClassPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBClassPickerViewController.m; sourceTree = "<group>"; };
+		61A00BFF147F455F004D0BFE /* EBAbilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAbilitiesViewController.h; sourceTree = "<group>"; };
+		61A00C00147F455F004D0BFE /* EBAbilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAbilitiesViewController.m; sourceTree = "<group>"; };
+		61A00C0214802B4B004D0BFE /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		61A00C0314802B4B004D0BFE /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		61C827D01482039A002049DD /* EBSkillPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSkillPickerViewController.h; sourceTree = "<group>"; };
+		61C827D11482039A002049DD /* EBSkillPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSkillPickerViewController.m; sourceTree = "<group>"; };
+		61C827D414834CEC002049DD /* EBFeatsPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBFeatsPickerViewController.h; sourceTree = "<group>"; };
+		61C827D514834CEC002049DD /* EBFeatsPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBFeatsPickerViewController.m; sourceTree = "<group>"; };
+		61C827D714835488002049DD /* EBPowersPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBPowersPickerViewController.h; sourceTree = "<group>"; };
+		61C827D814835488002049DD /* EBPowersPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBPowersPickerViewController.m; sourceTree = "<group>"; };
+		61F61D3B147885B100895031 /* CharacterBuilder 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CharacterBuilder 2.xcdatamodel"; sourceTree = "<group>"; };
+		61F61D4214788F8600895031 /* CharacterRace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterRace.h; sourceTree = "<group>"; };
+		61F61D4314788F8600895031 /* CharacterRace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterRace.m; sourceTree = "<group>"; };
+		61F61D451478932800895031 /* CharacterBuilder 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CharacterBuilder 3.xcdatamodel"; sourceTree = "<group>"; };
+		61F61D4714796F3C00895031 /* EBClassDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBClassDetailViewController.h; sourceTree = "<group>"; };
+		61F61D4814796F3C00895031 /* EBClassDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBClassDetailViewController.m; sourceTree = "<group>"; };
 		61FCBBE914776A37003BFAD8 /* CharacterBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharacterBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61FCBBED14776A37003BFAD8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		61FCBBEF14776A37003BFAD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		61FCBBF114776A37003BFAD8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		61FCBBF314776A37003BFAD8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		61FCBBF714776A38003BFAD8 /* CharacterBuilder-Info.plist */ = {isa = PBXFileReference; path = "CharacterBuilder-Info.plist"; sourceTree = "<group>"; };
+		61FCBBF714776A38003BFAD8 /* CharacterBuilder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CharacterBuilder-Info.plist"; sourceTree = "<group>"; };
 		61FCBBF914776A38003BFAD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		61FCBBFB14776A38003BFAD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		61FCBBFD14776A38003BFAD8 /* CharacterBuilder-Prefix.pch */ = {isa = PBXFileReference; path = "CharacterBuilder-Prefix.pch"; sourceTree = "<group>"; };
-		61FCBBFE14776A38003BFAD8 /* EBAppDelegate.h */ = {isa = PBXFileReference; path = EBAppDelegate.h; sourceTree = "<group>"; };
+		61FCBBFD14776A38003BFAD8 /* CharacterBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CharacterBuilder-Prefix.pch"; sourceTree = "<group>"; };
+		61FCBBFE14776A38003BFAD8 /* EBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBAppDelegate.h; sourceTree = "<group>"; };
 		61FCBBFF14776A38003BFAD8 /* EBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBAppDelegate.m; sourceTree = "<group>"; };
 		61FCBC0214776A38003BFAD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		61FCBC0514776A38003BFAD8 /* CharacterBuilder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CharacterBuilder.xcdatamodel; sourceTree = "<group>"; };
-		61FCBC0714776A38003BFAD8 /* EBMasterViewController.h */ = {isa = PBXFileReference; path = EBMasterViewController.h; sourceTree = "<group>"; };
+		61FCBC0714776A38003BFAD8 /* EBMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBMasterViewController.h; sourceTree = "<group>"; };
 		61FCBC0814776A38003BFAD8 /* EBMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBMasterViewController.m; sourceTree = "<group>"; };
-		61FCBC0A14776A38003BFAD8 /* EBDetailViewController.h */ = {isa = PBXFileReference; path = EBDetailViewController.h; sourceTree = "<group>"; };
+		61FCBC0A14776A38003BFAD8 /* EBDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBDetailViewController.h; sourceTree = "<group>"; };
 		61FCBC0B14776A38003BFAD8 /* EBDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +87,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61F61D3914784BC600895031 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61A00C0214802B4B004D0BFE /* Character.h */,
+				61A00C0314802B4B004D0BFE /* Character.m */,
+				617C125014783EF300B85774 /* CharacterClass.h */,
+				617C125114783EF300B85774 /* CharacterClass.m */,
+				61F61D4214788F8600895031 /* CharacterRace.h */,
+				61F61D4314788F8600895031 /* CharacterRace.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		61F61D4614796EF700895031 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				61FCBC0714776A38003BFAD8 /* EBMasterViewController.h */,
+				61FCBC0814776A38003BFAD8 /* EBMasterViewController.m */,
+				61FCBC0A14776A38003BFAD8 /* EBDetailViewController.h */,
+				61FCBC0B14776A38003BFAD8 /* EBDetailViewController.m */,
+				61F61D4714796F3C00895031 /* EBClassDetailViewController.h */,
+				61F61D4814796F3C00895031 /* EBClassDetailViewController.m */,
+				61A00BF8147B48DB004D0BFE /* EBRaceDetailViewController.h */,
+				61A00BF9147B48DB004D0BFE /* EBRaceDetailViewController.m */,
+				61A00BFC147CA154004D0BFE /* EBClassPickerViewController.h */,
+				61A00BFD147CA154004D0BFE /* EBClassPickerViewController.m */,
+				61A00BFF147F455F004D0BFE /* EBAbilitiesViewController.h */,
+				61A00C00147F455F004D0BFE /* EBAbilitiesViewController.m */,
+				61C827D01482039A002049DD /* EBSkillPickerViewController.h */,
+				61C827D11482039A002049DD /* EBSkillPickerViewController.m */,
+				61C827D414834CEC002049DD /* EBFeatsPickerViewController.h */,
+				61C827D514834CEC002049DD /* EBFeatsPickerViewController.m */,
+				61C827D714835488002049DD /* EBPowersPickerViewController.h */,
+				61C827D814835488002049DD /* EBPowersPickerViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		61FCBBDE14776A37003BFAD8 = {
 			isa = PBXGroup;
 			children = (
@@ -86,13 +156,11 @@
 		61FCBBF514776A37003BFAD8 /* CharacterBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				61F61D4614796EF700895031 /* View Controllers */,
+				61F61D3914784BC600895031 /* Model */,
 				61FCBBFE14776A38003BFAD8 /* EBAppDelegate.h */,
 				61FCBBFF14776A38003BFAD8 /* EBAppDelegate.m */,
 				61FCBC0114776A38003BFAD8 /* MainStoryboard.storyboard */,
-				61FCBC0714776A38003BFAD8 /* EBMasterViewController.h */,
-				61FCBC0814776A38003BFAD8 /* EBMasterViewController.m */,
-				61FCBC0A14776A38003BFAD8 /* EBDetailViewController.h */,
-				61FCBC0B14776A38003BFAD8 /* EBDetailViewController.m */,
 				61FCBC0414776A38003BFAD8 /* CharacterBuilder.xcdatamodeld */,
 				61FCBBF614776A38003BFAD8 /* Supporting Files */,
 			);
@@ -177,6 +245,16 @@
 				61FCBC0614776A38003BFAD8 /* CharacterBuilder.xcdatamodeld in Sources */,
 				61FCBC0914776A38003BFAD8 /* EBMasterViewController.m in Sources */,
 				61FCBC0C14776A38003BFAD8 /* EBDetailViewController.m in Sources */,
+				617C125214783EF300B85774 /* CharacterClass.m in Sources */,
+				61F61D4414788F8600895031 /* CharacterRace.m in Sources */,
+				61F61D4914796F3C00895031 /* EBClassDetailViewController.m in Sources */,
+				61A00BFA147B48DC004D0BFE /* EBRaceDetailViewController.m in Sources */,
+				61A00BFE147CA154004D0BFE /* EBClassPickerViewController.m in Sources */,
+				61A00C01147F455F004D0BFE /* EBAbilitiesViewController.m in Sources */,
+				61A00C0414802B4B004D0BFE /* Character.m in Sources */,
+				61C827D21482039A002049DD /* EBSkillPickerViewController.m in Sources */,
+				61C827D614834CED002049DD /* EBFeatsPickerViewController.m in Sources */,
+				61C827D914835489002049DD /* EBPowersPickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +368,7 @@
 				61FCBC1114776A38003BFAD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -297,9 +376,11 @@
 		61FCBC0414776A38003BFAD8 /* CharacterBuilder.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				61F61D3B147885B100895031 /* CharacterBuilder 2.xcdatamodel */,
+				61F61D451478932800895031 /* CharacterBuilder 3.xcdatamodel */,
 				61FCBC0514776A38003BFAD8 /* CharacterBuilder.xcdatamodel */,
 			);
-			currentVersion = 61FCBC0514776A38003BFAD8 /* CharacterBuilder.xcdatamodel */;
+			currentVersion = 61F61D451478932800895031 /* CharacterBuilder 3.xcdatamodel */;
 			path = CharacterBuilder.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

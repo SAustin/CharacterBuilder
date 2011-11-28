@@ -135,6 +135,18 @@
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"CharacterBuilder.sqlite"];
     
+    [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];    
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if (![fileManager fileExistsAtPath:[storeURL description]]) 
+    {
+        NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:@"CharacterBuilder" ofType:@"sqlite"];
+        if (defaultStorePath) 
+        {
+            [fileManager copyItemAtPath:defaultStorePath toPath:[storeURL description] error:NULL];
+        }
+    }
+    
     NSError *error = nil;
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error])
