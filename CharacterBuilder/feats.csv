@@ -1,0 +1,35 @@
+name,tier,race_prereq,class_prereq,class_feature_prereq,diety_prereq,power_prereq,armor_prereq,equipped prereq,strength_prereq,constitution_prereq,dexterity_prereq,intelligence_prereq,widsom_prereq,charisma_prereq,ac_benefit,fortitude_benefit,reflex_benefit,will_benefit,power_benefit,benefit_text,special,acrobatics_benefit,arcana_benefit,athletics_benefit,bluff_benefit,diplomacy_benefit,dungeoneering_benefit,endurance_benefit,heal_benefit,history_benefit,insight_benefit,intimidate_benefit,nature_benefit,perception_benefit,religion_benefit,stealth_benefit,streetwise_benefit,thievery_benefit,proficiency_benefit
+Action Surge,Heroic,Human,,,,,,,,,,,,,,,,,,You gain a +3 bonus to attack rolls you make during any action you gained by spending an action point.,,,,,,,,,,,,,,,,,,,
+Agile Hunter,Heroic,,Ranger,Hunter's Quarry,,,,,,,15,,,,,,,,,"When you score a critical hit with a melee attack against the target of your Hunter’s Quarry, you can shift as a free action, and the enemy takes a –2 penalty on attack rolls against you until the end of your next turn.",,,,,,,,,,,,,,,,,,,
+Alertness,Heroic,,,,,,,,,,,,,,,,,,,"You don’t grant enemies combat advantage during surprise rounds.You also gain a +2 feat bonus to Perception checks.",,,,,,,,,,,,,,2,,,,,
+Armor of Bahamut,Heroic,,,Channel Divinity,Bahamut,,,,,,,,,,,,,,Channel Divinity: Armor of Bahamut,You can invoke the power of your deity to use armor of Bahamut.,,,,,,,,,,,,,,,,,,,
+Armor Proficency (Chainmail),Heroic,,,,,,"Leather, Hide",,13,13,,,,,,,,,,You gain training with chainmail.,,,,,,,,,,,,,,,,,,,Chainmail
+Armor Proficency (Hide),Heroic,,,,,,Leather,,13,13,,,,,,,,,,You gain training with hide armor. ,,,,,,,,,,,,,,,,,,,Hide
+Armor Proficency (Leather),Heroic,,,,,,,,,,,,,,,,,,,You gain training with leather armor. ,,,,,,,,,,,,,,,,,,,Leather
+Armor Proficency (Plate),Heroic,,,,,,Scale,,15,15,,,,,,,,,,You gain training with plate armor. ,,,,,,,,,,,,,,,,,,,Plate
+Armor Proficency (Scale),Heroic,,,,,,Chainmail,,13,13,,,,,,,,,,You gain training with scale armor. ,,,,,,,,,,,,,,,,,,,Scale
+Astral Fire,Heroic,,,,,,,,,,,,,,,,,,,"You gain a +1 feat bonus to damage rolls when you use a power that has the fire or radiant keyword. At 11th level, this bonus increases to +2. At 21st level, it increases to +3.",,,,,,,,,,,,,,,,,,,
+Avandra's Rescue,Heroic,,,Channel Divinity,Avandra,,,,,,,,,,,,,,Channel Divinity: Avandra's Rescue,You can invoke the power of your deity to use Avandra’s rescue. ,,,,,,,,,,,,,,,,,,,
+Backstabber ,Heroic,,Rogue,Sneak Attack,,,,,,,,,,,,,,,,The extra damage dice from your Sneak Attack class feature increase from d6s to d8s. ,,,,,,,,,,,,,,,,,,,
+Blade Opportunist,Heroic,,,,,,,,13,,13,,,,,,,,,You gain a +2 bonus to opportunity attack rolls with a heavy blade or a light blade. ,,,,,,,,,,,,,,,,,,,
+Burning Blizzard,Heroic,,,,,,,,,,,13,13,,,,,,,"You gain a +1 feat bonus to damage rolls when you use a power that has the acid or cold keyword. At 11th level, this bonus increases to +2. At 21st level, it increases to +3.",,,,,,,,,,,,,,,,,,,
+Combat Reflexes,Heroic,,,,,,,,,,13,,,,,,,,,You gain a +1 bonus to opportunity attack rolls. ,,,,,,,,,,,,,,,,,,,
+Corellon's Grace,Heroic,,,Channel Divinity,Corellon,,,,,,,,,,,,,,Channel Divinity: Corellon's Grace,You can invoke the power of your deity to use Corellon’s grace. ,,,,,,,,,,,,,,,,,,,
+Dark Fury,Heroic,,,,,,,,,13,,,13,,,,,,,"You gain a +1 feat bonus to damage rolls when you use a power that has the necrotic or psychic keyword. At 11th level, this bonus increases to +2. At 21st level, it increases to +3.",,,,,,,,,,,,,,,,,,,
+Defensive Mobility,Heroic,,,,,,,,,,,,,,,,,,,You gain a +2 bonus to AC against oppor- tunity attacks. ,,,,,,,,,,,,,,,,,,,
+Distracting Shield,Heroic,,Fighter,Combat Challenge,,,,Shield,,,,,15,,,,,,,"If you hit a foe with an attack granted by your Combat Challenge class feature, the target takes a –2 penalty to attack rolls until the start of your next turn.",Shield,,,,,,,,,,,,,,,,,,
+Dodge Giants,Heroic,Dwarf,,,,,,,,,,,,,,,,,,You gain a +1 bonus to AC and Reflex defense against the attacks of Large or larger foes. ,,,,,,,,,,,,,,,,,,,
+Dragonborn Frenzy,Heroic,Dragonborn,,,,,,,,,,,,,,,,,,"While you are bloodied, you gain a +2 bonus to damage rolls. ",,,,,,,,,,,,,,,,,,,
+Dragonborn Senses,Heroic,Dragonborn,,,,,,,,,,,,,,,,,,You gain low-light vision. You gain a +1 feat bonus to Perception checks.,,,,,,,,,,,,,,,,,,,
+Durable,Heroic,,,,,,,,,,,,,,,,,,,Increase your number of healing surges by two. ,,,,,,,,,,,,,,,,,,,
+Dwarven Weapon Training,Heroic,Dwarf,,,,,,,,,,,,,,,,,,You gain proficiency and a +2 feat bonus to damage rolls with axes and hammers. ,,,,,,,,,,,,,,,,,,,
+Eladrin Soldier,Heroic,Eladrin,,,,,,,,,,,,,,,,,,You gain proficiency with all spears and a +2 feat bonus to damage rolls with longswords and all spears. ,,,,,,,,,,,,,,,,,,,
+Elven Precision,Heroic,Elf,,,,Elven Accuracy,,,,,,,,,,,,,,"When you use the elven accuracy power, you gain a +2 bonus to the new attack roll. ",,,,,,,,,,,,,,,,,,,
+Enlarged Dragon Breath,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Escape Artist,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Expanded Spellbook,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Far Shot,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Far Throw,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Fast Runner,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ferocious Rebuke,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Group Insight,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

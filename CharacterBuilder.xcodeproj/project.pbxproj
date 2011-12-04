@@ -12,6 +12,9 @@
 		61A00BFE147CA154004D0BFE /* EBClassPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A00BFD147CA154004D0BFE /* EBClassPickerViewController.m */; };
 		61A00C01147F455F004D0BFE /* EBAbilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A00C00147F455F004D0BFE /* EBAbilitiesViewController.m */; };
 		61A00C0414802B4B004D0BFE /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A00C0314802B4B004D0BFE /* Character.m */; };
+		61B5E4CD1486B30000644AFF /* parseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5E4CC1486B30000644AFF /* parseCSV.m */; };
+		61B5E4D01486BBC100644AFF /* CharacterPower.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5E4CF1486BBC100644AFF /* CharacterPower.m */; };
+		61B5E4D31486BBE000644AFF /* CharacterFeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5E4D21486BBE000644AFF /* CharacterFeat.m */; };
 		61C827D21482039A002049DD /* EBSkillPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C827D11482039A002049DD /* EBSkillPickerViewController.m */; };
 		61C827D614834CED002049DD /* EBFeatsPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C827D514834CEC002049DD /* EBFeatsPickerViewController.m */; };
 		61C827D914835489002049DD /* EBPowersPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C827D814835488002049DD /* EBPowersPickerViewController.m */; };
@@ -41,6 +44,13 @@
 		61A00C00147F455F004D0BFE /* EBAbilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAbilitiesViewController.m; sourceTree = "<group>"; };
 		61A00C0214802B4B004D0BFE /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
 		61A00C0314802B4B004D0BFE /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		61B5E4C81486B02E00644AFF /* CharacterBuilder 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CharacterBuilder 4.xcdatamodel"; sourceTree = "<group>"; };
+		61B5E4CB1486B30000644AFF /* parseCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parseCSV.h; sourceTree = "<group>"; };
+		61B5E4CC1486B30000644AFF /* parseCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parseCSV.m; sourceTree = "<group>"; };
+		61B5E4CE1486BBC100644AFF /* CharacterPower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterPower.h; sourceTree = "<group>"; };
+		61B5E4CF1486BBC100644AFF /* CharacterPower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterPower.m; sourceTree = "<group>"; };
+		61B5E4D11486BBE000644AFF /* CharacterFeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterFeat.h; sourceTree = "<group>"; };
+		61B5E4D21486BBE000644AFF /* CharacterFeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterFeat.m; sourceTree = "<group>"; };
 		61C827D01482039A002049DD /* EBSkillPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSkillPickerViewController.h; sourceTree = "<group>"; };
 		61C827D11482039A002049DD /* EBSkillPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSkillPickerViewController.m; sourceTree = "<group>"; };
 		61C827D414834CEC002049DD /* EBFeatsPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBFeatsPickerViewController.h; sourceTree = "<group>"; };
@@ -87,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61B5E4CA1486B2EC00644AFF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				61B5E4CB1486B30000644AFF /* parseCSV.h */,
+				61B5E4CC1486B30000644AFF /* parseCSV.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		61F61D3914784BC600895031 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +113,10 @@
 				61A00C0314802B4B004D0BFE /* Character.m */,
 				617C125014783EF300B85774 /* CharacterClass.h */,
 				617C125114783EF300B85774 /* CharacterClass.m */,
+				61B5E4D11486BBE000644AFF /* CharacterFeat.h */,
+				61B5E4D21486BBE000644AFF /* CharacterFeat.m */,
+				61B5E4CE1486BBC100644AFF /* CharacterPower.h */,
+				61B5E4CF1486BBC100644AFF /* CharacterPower.m */,
 				61F61D4214788F8600895031 /* CharacterRace.h */,
 				61F61D4314788F8600895031 /* CharacterRace.m */,
 			);
@@ -156,6 +179,7 @@
 		61FCBBF514776A37003BFAD8 /* CharacterBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				61B5E4CA1486B2EC00644AFF /* Util */,
 				61F61D4614796EF700895031 /* View Controllers */,
 				61F61D3914784BC600895031 /* Model */,
 				61FCBBFE14776A38003BFAD8 /* EBAppDelegate.h */,
@@ -255,6 +279,9 @@
 				61C827D21482039A002049DD /* EBSkillPickerViewController.m in Sources */,
 				61C827D614834CED002049DD /* EBFeatsPickerViewController.m in Sources */,
 				61C827D914835489002049DD /* EBPowersPickerViewController.m in Sources */,
+				61B5E4CD1486B30000644AFF /* parseCSV.m in Sources */,
+				61B5E4D01486BBC100644AFF /* CharacterPower.m in Sources */,
+				61B5E4D31486BBE000644AFF /* CharacterFeat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,9 +405,10 @@
 			children = (
 				61F61D3B147885B100895031 /* CharacterBuilder 2.xcdatamodel */,
 				61F61D451478932800895031 /* CharacterBuilder 3.xcdatamodel */,
+				61B5E4C81486B02E00644AFF /* CharacterBuilder 4.xcdatamodel */,
 				61FCBC0514776A38003BFAD8 /* CharacterBuilder.xcdatamodel */,
 			);
-			currentVersion = 61F61D451478932800895031 /* CharacterBuilder 3.xcdatamodel */;
+			currentVersion = 61B5E4C81486B02E00644AFF /* CharacterBuilder 4.xcdatamodel */;
 			path = CharacterBuilder.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

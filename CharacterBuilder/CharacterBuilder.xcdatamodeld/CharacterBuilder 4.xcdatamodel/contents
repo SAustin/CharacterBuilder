@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="11A511" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Character" representedClassName="Character">
+        <attribute name="adventuringCompany" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="alignment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="armorClass" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="charisma" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="constitution" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dexterity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="diety" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="epicDestiny" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fortitude" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="intelligence" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="paragonPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reflex" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strength" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalXP" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="will" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="wisdom" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="characterClass" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CharacterClass" inverseName="character" inverseEntity="CharacterClass" syncable="YES"/>
+        <relationship name="characterRace" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CharacterRace" inverseName="character" inverseEntity="CharacterRace" syncable="YES"/>
+        <relationship name="feats" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CharacterFeat" inverseName="character" inverseEntity="CharacterFeat" syncable="YES"/>
+        <relationship name="powers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CharacterPower" inverseName="character" inverseEntity="CharacterPower" syncable="YES"/>
+    </entity>
+    <entity name="CharacterClass" representedClassName="CharacterClass" syncable="YES">
+        <attribute name="acrobaticsSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="arcanaSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="armorClassBonus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="armorProf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="athleticsSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="baseHitPoints" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="bluffSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="diplomacySkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dungeoneeringSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="enduranceSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="firstLevelSkillCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="fortitudeBonus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="healingSurgesPerDay" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="healingSurgModifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="healSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="historySkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hitPointModifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hitPointsPerLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="implement" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="insightSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="intimidateSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="keyStrengths" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="meleeProf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="natureSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="perceptionSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="powerSource" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="powerSourceDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rangedProf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reflexBonus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="religionSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roleDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stealthSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="streetwiseSkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="theiverySkill" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="weaponProf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="willBonus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="character" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Character" inverseName="characterClass" inverseEntity="Character" syncable="YES"/>
+    </entity>
+    <entity name="CharacterFeat" representedClassName="CharacterFeat" syncable="YES">
+        <attribute name="acrobaticsBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="arcanaBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="armorClassBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="armorPrereq" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="athleticsBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="benefitText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bluffBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="charismaPrereq" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="classFeaturePrereq" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classPrereq" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="constitutionPrereq" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dexterityPrereq" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dietyPrereq" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diplomacyBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dungeoneeringBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="enduranceBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="equippedPrereq" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fortitudeBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="healBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="historyBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="insightBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="intelligencePrereq" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="intimidateBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="natureBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="perceptionBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="powerBenefit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="powerPrereq" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="proficencyBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="racePrereq" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reflexBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="religionBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="specialText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stealthBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="streetwiseBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="strengthPrereq" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="theiveryBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="willBenefit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="wisdomPrereq" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="feats" inverseEntity="Character" syncable="YES"/>
+    </entity>
+    <entity name="CharacterPower" representedClassName="CharacterPower" syncable="YES">
+        <attribute name="acidDamage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="actionType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attackAgainst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attackCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="attackFrom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attackType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="characterClass" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="charmEffect" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="coldDamage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="conjurationEffect" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="effect" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fearEffect" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="fireDamage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="flavorText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="forceDamage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="healingEffect" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="illusionEffect" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="implement" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lighteningDamage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="miss" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="necroticDamage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="poisonDamage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="poisonEffect" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="polymorphEffect" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="powerAccessories" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="powerSource" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="powerType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="powerUsage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="prerequesite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="psychicDamage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="radiantDamage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="range" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reliableEffect" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="requirement" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secondaryAttackAgainst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secondaryAttackFrom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secondaryHit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secondaryTarget" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sleepEffect" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="special" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stanceEffect" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="sustain" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sustainMinor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="target" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teleportationEffect" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="thunderDamage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="trigger" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weapon" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="weaponAttackMod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weaponHitMod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zoneEffect" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="character" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="powers" inverseEntity="Character" syncable="YES"/>
+    </entity>
+    <entity name="CharacterRace" representedClassName="CharacterRace" syncable="YES">
+        <attribute name="acrobaticsMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="arcanaMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="athleticsMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="bluffMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="charismaMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="constitutionMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dexterityMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="diplomacyMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dungeoneeringMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="enduranceMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="healMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="heightRange" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="historyMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="insightMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="intelligenceMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="intimidateMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="languages" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="natureMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="perceptionMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="religionMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="stealthMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="streetwiseMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="strengthMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="thieveryMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="vision" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weightRange" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wisdomMod" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="character" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Character" inverseName="characterRace" inverseEntity="Character" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Character" positionX="261" positionY="189" width="128" height="285"/>
+        <element name="CharacterClass" positionX="160" positionY="192" width="128" height="645"/>
+        <element name="CharacterRace" positionX="160" positionY="192" width="128" height="510"/>
+        <element name="CharacterFeat" positionX="432" positionY="168" width="128" height="660"/>
+        <element name="CharacterPower" positionX="-54" positionY="153" width="128" height="870"/>
+    </elements>
+</model>

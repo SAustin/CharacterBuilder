@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CharacterFeat.h"
+#import "CharacterPower.h"
+#import "CharacterClass.h"
+#import "CharacterRace.h"
+#import "parseCSV.h"
 
 @interface EBAppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -18,5 +23,6 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+- (void)prepareDatabase;
 
 @end
