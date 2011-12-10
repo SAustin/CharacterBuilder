@@ -138,6 +138,9 @@
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"CharacterBuilder.sqlite"];
     
+    /*
+     * Comment this line out to maintain existing database
+     */
     [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];    
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
