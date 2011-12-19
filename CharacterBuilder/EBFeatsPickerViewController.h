@@ -7,7 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CharacterFeat.h"
 
-@interface EBFeatsPickerViewController : UIViewController
+@protocol EBFeatsPickerViewController;
+
+@interface EBFeatsPickerViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate>
+
+@property (strong, nonatomic) IBOutlet UITextField *featsRemainingTextField;
+@property (strong, nonatomic) IBOutlet UITableView *featsTableView;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, unsafe_unretained) id<EBFeatsPickerViewController>delegate;
+
+
+- (void)configureCell:(UITableViewCell *)cell
+          atIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
+@protocol EBFeatsPickerViewController <NSObject>
+
+- (NSManagedObjectContext *)managedObjectContext;
 
 @end

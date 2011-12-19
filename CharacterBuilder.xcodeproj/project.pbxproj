@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6130C995149EE956006A233A /* EBFeatsPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6130C992149EE956006A233A /* EBFeatsPickerViewController.m */; };
+		6130C996149EE956006A233A /* EBPowersPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6130C994149EE956006A233A /* EBPowersPickerViewController.m */; };
 		617C125214783EF300B85774 /* CharacterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 617C125114783EF300B85774 /* CharacterClass.m */; };
 		61A00BFA147B48DC004D0BFE /* EBRaceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A00BF9147B48DB004D0BFE /* EBRaceDetailViewController.m */; };
 		61A00BFE147CA154004D0BFE /* EBClassPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A00BFD147CA154004D0BFE /* EBClassPickerViewController.m */; };
@@ -16,8 +18,6 @@
 		61B5E4D01486BBC100644AFF /* CharacterPower.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5E4CF1486BBC100644AFF /* CharacterPower.m */; };
 		61B5E4D31486BBE000644AFF /* CharacterFeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5E4D21486BBE000644AFF /* CharacterFeat.m */; };
 		61C827D21482039A002049DD /* EBSkillPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C827D11482039A002049DD /* EBSkillPickerViewController.m */; };
-		61C827D614834CED002049DD /* EBFeatsPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C827D514834CEC002049DD /* EBFeatsPickerViewController.m */; };
-		61C827D914835489002049DD /* EBPowersPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C827D814835488002049DD /* EBPowersPickerViewController.m */; };
 		61F61D4414788F8600895031 /* CharacterRace.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F61D4314788F8600895031 /* CharacterRace.m */; };
 		61F61D4914796F3C00895031 /* EBClassDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F61D4814796F3C00895031 /* EBClassDetailViewController.m */; };
 		61FCBBEE14776A37003BFAD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FCBBED14776A37003BFAD8 /* UIKit.framework */; };
@@ -34,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6130C991149EE956006A233A /* EBFeatsPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBFeatsPickerViewController.h; sourceTree = "<group>"; };
+		6130C992149EE956006A233A /* EBFeatsPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBFeatsPickerViewController.m; sourceTree = "<group>"; };
+		6130C993149EE956006A233A /* EBPowersPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBPowersPickerViewController.h; sourceTree = "<group>"; };
+		6130C994149EE956006A233A /* EBPowersPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBPowersPickerViewController.m; sourceTree = "<group>"; };
 		617C125014783EF300B85774 /* CharacterClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterClass.h; sourceTree = "<group>"; };
 		617C125114783EF300B85774 /* CharacterClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterClass.m; sourceTree = "<group>"; };
 		61A00BF8147B48DB004D0BFE /* EBRaceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBRaceDetailViewController.h; sourceTree = "<group>"; };
@@ -53,10 +57,6 @@
 		61B5E4D21486BBE000644AFF /* CharacterFeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterFeat.m; sourceTree = "<group>"; };
 		61C827D01482039A002049DD /* EBSkillPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSkillPickerViewController.h; sourceTree = "<group>"; };
 		61C827D11482039A002049DD /* EBSkillPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSkillPickerViewController.m; sourceTree = "<group>"; };
-		61C827D414834CEC002049DD /* EBFeatsPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBFeatsPickerViewController.h; sourceTree = "<group>"; };
-		61C827D514834CEC002049DD /* EBFeatsPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBFeatsPickerViewController.m; sourceTree = "<group>"; };
-		61C827D714835488002049DD /* EBPowersPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBPowersPickerViewController.h; sourceTree = "<group>"; };
-		61C827D814835488002049DD /* EBPowersPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBPowersPickerViewController.m; sourceTree = "<group>"; };
 		61F61D3B147885B100895031 /* CharacterBuilder 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CharacterBuilder 2.xcdatamodel"; sourceTree = "<group>"; };
 		61F61D4214788F8600895031 /* CharacterRace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterRace.h; sourceTree = "<group>"; };
 		61F61D4314788F8600895031 /* CharacterRace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterRace.m; sourceTree = "<group>"; };
@@ -126,6 +126,10 @@
 		61F61D4614796EF700895031 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6130C991149EE956006A233A /* EBFeatsPickerViewController.h */,
+				6130C992149EE956006A233A /* EBFeatsPickerViewController.m */,
+				6130C993149EE956006A233A /* EBPowersPickerViewController.h */,
+				6130C994149EE956006A233A /* EBPowersPickerViewController.m */,
 				61FCBC0714776A38003BFAD8 /* EBMasterViewController.h */,
 				61FCBC0814776A38003BFAD8 /* EBMasterViewController.m */,
 				61FCBC0A14776A38003BFAD8 /* EBDetailViewController.h */,
@@ -140,10 +144,6 @@
 				61A00C00147F455F004D0BFE /* EBAbilitiesViewController.m */,
 				61C827D01482039A002049DD /* EBSkillPickerViewController.h */,
 				61C827D11482039A002049DD /* EBSkillPickerViewController.m */,
-				61C827D414834CEC002049DD /* EBFeatsPickerViewController.h */,
-				61C827D514834CEC002049DD /* EBFeatsPickerViewController.m */,
-				61C827D714835488002049DD /* EBPowersPickerViewController.h */,
-				61C827D814835488002049DD /* EBPowersPickerViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -277,11 +277,11 @@
 				61A00C01147F455F004D0BFE /* EBAbilitiesViewController.m in Sources */,
 				61A00C0414802B4B004D0BFE /* Character.m in Sources */,
 				61C827D21482039A002049DD /* EBSkillPickerViewController.m in Sources */,
-				61C827D614834CED002049DD /* EBFeatsPickerViewController.m in Sources */,
-				61C827D914835489002049DD /* EBPowersPickerViewController.m in Sources */,
 				61B5E4CD1486B30000644AFF /* parseCSV.m in Sources */,
 				61B5E4D01486BBC100644AFF /* CharacterPower.m in Sources */,
 				61B5E4D31486BBE000644AFF /* CharacterFeat.m in Sources */,
+				6130C995149EE956006A233A /* EBFeatsPickerViewController.m in Sources */,
+				6130C996149EE956006A233A /* EBPowersPickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

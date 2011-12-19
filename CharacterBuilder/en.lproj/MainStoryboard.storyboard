@@ -1005,11 +1005,67 @@
                     <view key="view" contentMode="scaleToFill" id="pgi-uc-GpJ">
                         <rect key="frame" x="0.0" y="64" width="703" height="704"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="LVM-PU-3qT">
+                                <rect key="frame" x="20" y="20" width="97" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Feats Remaining" lineBreakMode="tailTruncation" minimumFontSize="10" id="Ahc-d5-P7X">
+                                <rect key="frame" x="125" y="25" width="129" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jop-iU-d0M">
+                                <rect key="frame" x="0.0" y="59" width="703" height="645"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="featCell" rowHeight="208" id="Td6-4R-LG8">
+                                        <rect key="frame" x="0.0" y="54" width="703" height="210"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="43" y="1" width="597" height="207"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" text="Feat" lineBreakMode="tailTruncation" minimumFontSize="10" id="43D-fh-4oO">
+                                                    <rect key="frame" x="20" y="20" width="663" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" text="Prereq's" lineBreakMode="wordWrap" numberOfLines="3" minimumFontSize="10" id="ZhG-vM-2fM">
+                                                    <rect key="frame" x="20" y="50" width="663" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="Color Text" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="10" id="SeF-aZ-SXb">
+                                                    <rect key="frame" x="20" y="102" width="663" height="85"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zeH-6a-jyA"/>
+                    <navigationItem key="navigationItem" title="Feats" id="zeH-6a-jyA"/>
                     <connections>
+                        <outlet property="featsRemainingTextField" destination="LVM-PU-3qT" id="bh5-qx-32j"/>
+                        <outlet property="featsTableView" destination="jop-iU-d0M" id="qTM-6c-e2v"/>
                         <segue destination="HFU-lA-5D8" kind="push" id="xl8-8Q-5J8"/>
                     </connections>
                 </viewController>
@@ -1359,6 +1415,10 @@
         </class>
         <class className="EBFeatsPickerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EBFeatsPickerViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="featsRemainingTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="featsTableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="EBMasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EBMasterViewController.h"/>
